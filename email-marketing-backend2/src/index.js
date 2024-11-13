@@ -4,9 +4,11 @@ const mongoose = require("mongoose");
 const Agenda = require("agenda");
 const nodemailer = require("nodemailer");
 require("dotenv").config();
+const cors = require("cors");
 
 const app = express();
 app.use(bodyParser.json());
+app.use(cors());
 
 // MongoDB connection
 mongoose.connect("mongodb://localhost:27017/email_scheduler", {});
@@ -83,7 +85,7 @@ app.post("/schedule-email", async (req, res) => {
     text: body,
   });
 
-  res.send("Email scheduled successfully");
+  res.send("Email send Instantly");
 });
 
 const PORT = process.env.PORT || 3000;
