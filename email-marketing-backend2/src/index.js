@@ -93,6 +93,3 @@ const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
-
-// // set up app password for gmail and use it in the nodemailer transporter
-// // https://myaccount.google.com/apppasswords?rapt=AEjHL4PCknwRSqSz-eKvnHT85NqZxSNmxRVQPgW1RGwRkn4sWWef90M8sKpQ7Yq57zsHfPag239TV9U7bggafv2aamQfKFvVDSDmZocCAqtNM-e_Ad_PJq8
